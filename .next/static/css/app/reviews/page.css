@@ -1,0 +1,53 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./app/reviews/ReviewsPage.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************/
+/* ReviewsPage.css */
+
+
+.reviews-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  text-align: center;
+  min-height: 90vh;
+  margin-top: 10%;
+  font-family: 'REM', sans-serif;
+}
+/* grid style pour gerer les petits ecrans*/
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.reviews-page .reviews-link {
+  display: flex;
+  margin: 10px 0;
+  text-decoration: none;
+  color: rgb(33, 210, 30);
+  font-weight: bold;
+  padding: 10px 20px;
+  border: 1px solid #333;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  height: 80px;
+  background-color: black;
+  font-family: 'REM', sans-serif;
+  
+}
+
+.reviews-page .reviews-link:hover {
+  background-color: rgb(30, 210, 54);
+  color: black;
+}
+.reviews-page .text-t{
+  font-family: 'REM', sans-serif;
+}

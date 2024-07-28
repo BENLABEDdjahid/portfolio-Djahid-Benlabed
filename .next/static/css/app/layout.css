@@ -1,0 +1,121 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./app/globals.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: dimgray;
+
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* CSS pour les téléphones mobiles */
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/header/header.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: black;
+  color: rgb(30, 210, 90);
+  text-decoration: none;
+  font-family: 'REM', sans-serif;
+}
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(30, 210, 30);
+    text-decoration: none;
+    font-family: 'REM', sans-serif;
+}
+
+.header .nav-links {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+  color: rgb(30, 210, 33);
+  font-family: 'REM', sans-serif;
+}
+
+.header .nav-links a {
+  color: rgb(30, 210, 78);
+  text-decoration: none;
+}
+
+.header .nav-links a:hover {
+  color: #ddd;
+
+}
+
+/*!**************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[12].use[3]!./components/footer/footer.css ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.footer a {
+  color: rgb(15, 224, 46);
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: 'REM', sans-serif;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
+
