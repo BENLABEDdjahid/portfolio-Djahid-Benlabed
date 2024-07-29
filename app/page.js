@@ -4,9 +4,27 @@ export default function Home() {
   return (
     <div className="home-page">
       <img className="profile-pic" src="/pictures/profile.jpg" alt="Profile" />
-      <div className="intro">Bonjour !!!</div>
-      <div className="skills">
-      Je suis un passionné des commandes électriques avec un vif intérêt pour le développement web. J'ai un parcours académique solide en commandes électriques qui m'a permis d'acquérir des compétences en résolution de problèmes, en logique et en pensée analytique. Ces compétences se sont révélées extrêmement bénéfiques lors de mon immersion dans le monde du développement web. J'ai acquis des compétences techniques solides dans plusieurs langages de programmation, dont JavaScript, HTML, CSS et la bibliothèque React.js. J'ai développé une gamme de projets qui illustrent mes compétences techniques, ma créativité et ma capacité à travailler en équipe.
+      <div className="intro">Bienvenue sur mon Portfolio</div>
+      <p>Je m'appelle Djahid Benlabed, et je suis Développeur Web. Voici un aperçu de mes compétences et de mes projets.</p>
+      <div className="skills-container">
+        <h2>Compétences</h2>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Node.js</li>
+          <li>SQL</li>
+        </ul>
+      </div>
+      <div className="skills-container">
+        <h2>Frameworks</h2>
+        <ul>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Express</li>
+          <li>Redux</li>
+        </ul>
       </div>
     </div>
   );
