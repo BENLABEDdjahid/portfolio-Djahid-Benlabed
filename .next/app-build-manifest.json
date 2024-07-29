@@ -29,24 +29,6 @@
       "static/chunks/main-app.js",
       "static/css/app/reviews/page.css",
       "static/chunks/app/reviews/page.js"
-    ],
-    "/projets/[id]/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/projets/[id]/page.css",
-      "static/chunks/app/projets/[id]/page.js"
-    ],
-    "/reviews/reviews/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/reviews/reviews/page.css",
-      "static/chunks/app/reviews/reviews/page.js"
-    ],
-    "/reviews/setreviews/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/css/app/reviews/setreviews/page.css",
-      "static/chunks/app/reviews/setreviews/page.js"
     ]
   }
 }
