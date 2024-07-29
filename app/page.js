@@ -5,7 +5,7 @@ export default function Home() {
     <div className="home-page">
       <img className="profile-pic" src="/pictures/profile.jpg" alt="Profile" />
       <div className="intro">Bienvenue sur mon Portfolio</div>
-      <p>Je m'appelle Djahid Benlabed, et je suis Développeur Web. Voici un aperçu de mes compétences et de mes projets.</p>
+      <p>Je suis Djahid Benlabed, Développeur Web spécialisé. Voici un aperçu professionnel de mes compétences et projets</p>
       <div className="skills-container">
         <h2>Compétences</h2>
         <ul>

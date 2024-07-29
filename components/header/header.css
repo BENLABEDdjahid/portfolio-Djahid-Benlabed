@@ -24,7 +24,7 @@
 .header .logo {
     font-size: 1.5em;
     font-weight: bold;
-    color: rgb(30, 210, 30);
+    color: rgb(243, 243, 250);
     text-decoration: none;
     font-family: 'REM', sans-serif;
 }
@@ -33,16 +33,16 @@
   display: flex;
   gap: 15px;
   text-decoration: none;
-  color: rgb(30, 210, 33);
+  color: rgb(246, 246, 249);
   font-family: 'REM', sans-serif;
 }
 
 .header .nav-links a {
-  color: rgb(30, 210, 78);
+  color: rgb(251, 251, 255);
   text-decoration: none;
 }
 
 .header .nav-links a:hover {
-  color: #ddd;
+  color: #f4eded;
 
 }

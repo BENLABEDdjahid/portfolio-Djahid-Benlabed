@@ -1,47 +1,96 @@
-.ProjectPage .project-link {
-  display: flex;
-  margin: 10px 0;
-  text-decoration: none;
-  color: rgb(30, 210, 60);
-  font-weight: bold;
-  padding: 10px 20px;
-  border: 1px solid #333;
-  border-radius: 10px;
-  text-align: center;
-  width: 300px;
-  height: 60px;
-  background-color: black;
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
+
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: 'REM', sans-serif;
 }
-/* grid style pour gerer les petits ecrans*/
-@media (max-width: 768px) {
-  form {
-    width: 90%;
-  }
-}
 
-@media (max-width: 480px) {
-  form {
-    width: 100%;
-  }
-}
-.ProjectPage .project-link:hover {
-  background-color: rgb(30, 210, 81);
-  color: black;
- 
-}
 .ProjectPage {
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
   align-items: center;
-  height: fit-content;
   text-align: center;
-  font-family: 'REM', sans-serif;
+  padding: 20px;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #3b82f6, #9333ea, #f43f5e, #f59e0b);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #fcfeff;
 }
-.text{
-  font-family: 'REM', sans-serif;
-  margin-top: 5%;
-  margin-bottom: 15px;
-  font-size: 50px;
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.text {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 300px;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-title {
+  font-size: 1.5em;
+  margin: 15px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

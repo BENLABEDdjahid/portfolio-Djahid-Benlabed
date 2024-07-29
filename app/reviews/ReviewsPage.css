@@ -27,7 +27,7 @@
   display: flex;
   margin: 10px 0;
   text-decoration: none;
-  color: rgb(33, 210, 30);
+  color: rgb(242, 242, 246);
   font-weight: bold;
   padding: 10px 20px;
   border: 1px solid #333;
@@ -41,7 +41,7 @@
 }
 
 .reviews-page .reviews-link:hover {
-  background-color: rgb(30, 210, 54);
+  background-color: rgb(41, 41, 43);
   color: black;
 }
 .reviews-page .text-t{

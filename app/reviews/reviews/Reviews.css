@@ -51,10 +51,10 @@
 }
 
 .review-button:hover {
-  background-color: darkgreen;
+  background-color: rgb(0, 100, 37);
 }
 .review-button-supp {
-  background-color: rgb(30, 210, 54);
+  background-color: rgb(210, 30, 30);
   color: #fff;
   border: none;
   border-radius: 5px;

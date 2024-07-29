@@ -5,28 +5,29 @@ function page() {
   const projects = [
     {
       id: 1,
-      title: "Jeu: Tic-Tac-Tao",
+      title: "Projet 1",
+      image: "/pictures/project1.jpg", // Update with the correct image path
     },
     {
       id: 2,
-      title: "Menu de restaurant",
+      title: "Projet 2",
+      image: "/pictures/project2.jpg", // Update with the correct image path
     },
   ];
 
   return (
     <div className="ProjectPage">
-      <h1 className="text">Mes Projects</h1>
-      <nav>
+      <h1 className="text">Mes Projets</h1>
+      <div className="project-container">
         {projects.map((project, i) => (
-          <Link
-            href={`/projets/${project.id}`}
-            className="project-link"
-            key={i}
-          >
-            {project.title}
+          <Link href={`/projets/${project.id}`} className="project-link" key={i}>
+            <div className="project-card">
+              <img src={project.image} alt={project.title} className="project-image" />
+              <h2 className="project-title">{project.title}</h2>
+            </div>
           </Link>
         ))}
-      </nav>
+      </div>
     </div>
   );
 }
