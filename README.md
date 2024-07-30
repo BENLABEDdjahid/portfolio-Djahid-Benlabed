@@ -11,6 +11,8 @@ Pied de page (Footer) 🦶 : Liens vers GitHub et LinkedIn.
 Pages de projets 💼 : Détails de mes projets avec description et technologies utilisées.
 Page de contact 📞 : Formulaire de contact valide.
 Pages de témoignages ✍️ : Les visiteurs peuvent laisser et modifier des témoignages.
+
+
 Exigences ✅
 
 Chaque projet doit avoir au moins les détails suivants :
