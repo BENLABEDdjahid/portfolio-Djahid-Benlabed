@@ -38,4 +38,5 @@ Redux
 Instructions 🛠️
 
 Installez les dépendances : npm install
+
 Lancez l'application : npm run dev
