@@ -30,21 +30,17 @@ function ReviewsPage() {
         <>
           <h1 className="text-t">Témoignages</h1>
           <nav>
-            <Link href="/reviews/reviews" className="reviews-link">
+            <Link href="/reviews/reviews/Tem" className="reviews-link">
               Voir les témoignages
             </Link>
-            <Link href="/reviews/setreviews" className="reviews-link">
+            <Link href="/reviews/setreviews/Tem" className="reviews-link">
               Ajouter un témoignage
             </Link>
           </nav>
         </>
       )}
 
-      {!isLoggedIn && (
-        <button className="login-button" onClick={handleLogin}>
-          Se connecter (pour test)
-        </button>
-      )}
+     
     </div>
   );
 }

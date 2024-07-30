@@ -11,7 +11,7 @@
   font-family: 'REM', sans-serif;
 }
 
-/* Styles pour gérer les petits écrans */
+/* Styles for small screens */
 @media (max-width: 768px) {
   form {
     width: 90%;
