@@ -21,6 +21,7 @@ Validation de tous les formulaires avec des messages adéquats pour l’utilisat
 Une page login et une page inscription liées à Redux (backend non obligatoire).
 Des pages de témoignages où les visiteurs peuvent laisser et modifier des messages, avec affichage de la liste des témoignages (Redux obligatoire, backend non obligatoire).
 Protection de toutes les pages, à l’exception des pages de login et d’inscription (seules les personnes connectées peuvent voir les autres pages).
+
 Technologies Utilisées 💻
 
 Next.js
