@@ -29,6 +29,23 @@
       "static/chunks/main-app.js",
       "static/css/app/reviews/page.css",
       "static/chunks/app/reviews/page.js"
+    ],
+    "/reviews/login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/reviews/login/page.css",
+      "static/chunks/app/reviews/login/page.js"
+    ],
+    "/projets/[id]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/projets/[id]/page.css",
+      "static/chunks/app/projets/[id]/page.js"
+    ],
+    "/_not-found/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/_not-found/page.js"
     ]
   }
 }

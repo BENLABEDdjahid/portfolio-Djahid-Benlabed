@@ -5,20 +5,9 @@
   margin-top: 20px;
   margin-bottom: 20px;
   min-height: 90vh;
-
-}
-/* grid style pour gerer les petits ecrans*/
-@media (max-width: 768px) {
-  form {
-    width: 90%;
-  }
+  font-family: 'REM', sans-serif;
 }
 
-@media (max-width: 480px) {
-  form {
-    width: 100%;
-  }
-}
 .set-reviews-input {
   width: 40%;
   padding: 10px;
@@ -30,7 +19,8 @@
   background-color: black;
   font-family: 'REM', sans-serif;
 }
-.set-reviews-input-avis{
+
+.set-reviews-input-avis {
   width: 40%;
   height: 150px;
   padding: 10px;
@@ -42,6 +32,7 @@
   background-color: black;
   font-family: 'REM', sans-serif;
 }
+
 .set-reviews-button {
   background-color: rgb(210, 30, 72);
   color: #fff;
@@ -52,8 +43,24 @@
   margin-top: 20px;
   font-family: 'REM', sans-serif;
 }
-.text-avis{
+
+.text-avis {
   margin-bottom: 25px;
   margin-top: 20%;
   font-family: 'REM', sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .set-reviews-input,
+  .set-reviews-input-avis {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .set-reviews-input,
+  .set-reviews-input-avis {
+    width: 100%;
+  }
 }

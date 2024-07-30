@@ -6,7 +6,7 @@ import { addReview } from "@/redux/feature/review";
 import { useRouter } from "next/navigation";
 import "./SetReviews.css";
 
-function page() {
+export default function SetReviewsPage() {
   const [name, setName] = useState("");
   const [review, setReview] = useState("");
   const [errorName, setErrorName] = useState("");
@@ -32,7 +32,7 @@ function page() {
       // Save review to redux
       dispatch(addReview({ name, review }));
 
-      // Redirection vers la page d'accueil
+      // Redirection vers la page des témoignages
       router.push("/reviews/reviews");
     }
   };
@@ -62,5 +62,3 @@ function page() {
     </div>
   );
 }
-
-export default page;

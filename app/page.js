@@ -20,8 +20,8 @@ export default function Home() {
       <div className="skills-container">
         <h2>Frameworks</h2>
         <ul>
-          <li>React</li>
           <li>Next.js</li>
+          <li>React</li>
           <li>Express</li>
           <li>Redux</li>
         </ul>
