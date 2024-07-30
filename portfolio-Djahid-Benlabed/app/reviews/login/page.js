@@ -50,9 +50,8 @@ export default function LoginPage() {
         <button type="submit">Login</button>
       </form>
       <p>Don't have an account? <Link href="/reviews/inscription">Sign up</Link></p>
-      <button className="login-button" onClick={handleTestLogin}>
-        Se connecter (pour test)
-      </button>
+      
+      
     </div>
   );
 }
