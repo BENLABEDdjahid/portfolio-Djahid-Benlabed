@@ -25,8 +25,11 @@ Protection de toutes les pages, à l’exception des pages de login et d’inscr
 Technologies Utilisées 💻
 
 Next.js
+
 React Router
+
 CSS Modules
+
 Redux
 
 Instructions 🛠️
