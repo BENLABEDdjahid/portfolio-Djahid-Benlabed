@@ -9,20 +9,29 @@
 
 body {
   background-color: dimgray;
+}
 
-  
-  @media (max-width: 768px) {
-    .container {
-      width: 100%;
-      padding: 10px;
-    }
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* CSS pour les tablettes */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
   }
-  
-  /* CSS pour les téléphones mobiles */
-  @media (max-width: 480px) {
-    .container {
-      width: 100%;
-      padding: 5px;
-    }
+}
+
+/* CSS pour les téléphones mobiles */
+@media (max-width: 480px) {
+  .container {
+    width: 100%;
+    padding: 5px;
   }
 }
