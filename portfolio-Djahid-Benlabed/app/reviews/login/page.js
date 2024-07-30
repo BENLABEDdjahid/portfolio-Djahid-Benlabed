@@ -1,7 +1,7 @@
 "use client";
 
 import { useDispatch } from 'react-redux';
-import { login } from '@/redux/feature/authSlice'; // Ajustez ce chemin selon votre structure réelle
+import { login } from '@/redux/feature/authSlice'; // Adjust this path according to your actual structure
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -18,7 +18,7 @@ export default function LoginPage() {
     e.preventDefault();
     if (username === 'djahid' && password === 'djahid25') {
       dispatch(login());
-      router.push('/reviews/reviewss') ; 
+      router.push('/reviews/reviewss'); // Ensure this route exists
     } else {
       setError('Invalid username or password');
     }
@@ -30,16 +30,28 @@ export default function LoginPage() {
       <form onSubmit={handleSubmit}>
         <div>
           <label>Username</label>
-          <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} required />
+          <input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
         </div>
         <div>
           <label>Password</label>
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+            required
+          />
         </div>
         {error && <p className="error">{error}</p>}
         <button type="submit">Se connecter</button>
       </form>
-      <p>Don't have an account? <Link href="/reviews/inscription">Sign up</Link></p>
+      <p>
+        Don't have an account? <Link href="/reviews/inscription">Sign up</Link>
+      </p>
     </div>
   );
 }

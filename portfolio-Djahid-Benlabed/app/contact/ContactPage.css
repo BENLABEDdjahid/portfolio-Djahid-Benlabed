@@ -1,28 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
 
 body {
-  background-color: linear-gradient(45deg, #3b82f6, #9333ea, #f43f5e, #f59e0b); /* Couleur de fond de la page */
+  background: linear-gradient(45deg, #3b82f6, #9333ea, #f43f5e, #f59e0b);
   background-size: 400% 400%;
-  color: #f1f1f1; /* Couleur du texte par défaut */
+  color: #f1f1f1;
   font-family: 'REM', sans-serif;
   margin: 0;
   padding: 0;
+  animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 70%;
+  width: 50%;
   margin: auto;
   min-height: 90vh;
-  background-color: #3a3a3a; /* Couleur de fond du formulaire */
+  background-color: #3a3a3a;
   padding: 20px;
   border-radius: 10px;
   animation: fadeIn 1s ease-in-out;
 }
 
-/* grid style for managing smaller screens */
+@media (max-width: 1024px) {
+  form {
+    width: 70%;
+  }
+}
+
 @media (max-width: 768px) {
   form {
     width: 90%;
@@ -31,7 +43,7 @@ form {
 
 @media (max-width: 480px) {
   form {
-    width: 100%;
+    width: 95%;
   }
 }
 
@@ -51,7 +63,7 @@ textarea {
   margin: 5px 0;
   resize: none;
   color: aliceblue;
-  background-color: #1e1e1e; /* Couleur de fond des champs de saisie */
+  background-color: #1e1e1e;
   animation: slideInRight 0.5s ease-in-out;
 }
 

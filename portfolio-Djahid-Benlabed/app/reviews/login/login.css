@@ -5,8 +5,33 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #9c27b0;
+  background: #a8e0ff;
   font-family: Arial, sans-serif;
+  overflow: hidden;
+  animation: backgroundChange 10s infinite alternate;
+}
+
+@keyframes backgroundChange {
+  0% {
+    background-color: #a8e0ff;
+  }
+  50% {
+    background-color: #90cdf4;
+  }
+  100% {
+    background-color: #a8e0ff;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .header, .footer {
@@ -16,6 +41,7 @@ body {
   text-align: center;
   padding: 15px 0;
   position: fixed;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .header {
@@ -35,35 +61,40 @@ body {
   box-sizing: border-box;
   margin-top: 80px; /* Adjust according to the height of the header */
   margin-bottom: 60px; /* Adjust according to the height of the footer */
+  animation: fadeIn 2s ease-in-out;
 }
 
 .signin-page {
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.3);
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 360px;
   text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .signin-page h2 {
   margin-bottom: 24px;
   font-size: 24px;
   color: #333;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .input-group {
   position: relative;
   margin-bottom: 24px;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .input-group input {
   width: 100%;
-  padding: 12px 12px 12px 40px;
-  border: 1px solid #ddd;
+  padding: 12px 12px 12px 20px;
+  border: 1px solid #ccc;
   border-radius: 8px;
   box-sizing: border-box;
   font-size: 16px;
+  background: rgba(255, 255, 255, 0.8);
 }
 
 .input-group .icon {
@@ -110,7 +141,7 @@ body {
 .signin-button {
   width: 100%;
   padding: 12px;
-  background-color: #9c27b0;
+  background-color: #007bff;
   border: none;
   border-radius: 8px;
   color: white;
@@ -120,7 +151,7 @@ body {
 }
 
 .signin-button:hover {
-  background-color: #7b1fa2;
+  background-color: #0056b3;
 }
 
 .error {

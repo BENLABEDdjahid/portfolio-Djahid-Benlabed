@@ -24,7 +24,7 @@ export default function SignupPage() {
         return;
       }
       dispatch(login({ username, email, password })); // Adjust according to your login function
-      router.push('/reviews'); // Redirect to testimonials page after sign-up
+      router.push('/reviews/login'); // Redirect to login page after sign-up
     } else {
       setError('All fields are required');
     }

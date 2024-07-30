@@ -5,123 +5,7 @@ body {
   align-items: center;
   min-height: 100vh;
   margin: 0;
-  background-color: #f0f2f5;body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0;
-    background-color: #f0f2f5;
-    font-family: 'Arial', sans-serif;
-    overflow-x: hidden;
-  }
-  
-  header, footer {
-    width: 100%;
-    background-color: #007bff;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
-    position: fixed;
-    left: 0;
-    z-index: 1000;
-  }
-  
-  header {
-    top: 0;
-  }
-  
-  footer {
-    bottom: 0;
-  }
-  
-  .main-content {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    width: 100%;
-    box-sizing: border-box;
-    margin-top: 60px; /* Ajuster selon la hauteur de l'en-tête */
-    margin-bottom: 60px; /* Ajuster selon la hauteur du pied de page */
-  }
-  
-  .reviews-page {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    width: 80%;
-    max-width: 1200px;
-    text-align: center;
-  }
-  
-  .reviews-header {
-    margin-bottom: 40px;
-  }
-  
-  .reviews-header h1 {
-    font-size: 36px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .reviews-header p {
-    font-size: 18px;
-    color: #555;
-  }
-  
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-  }
-  
-  .review-card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  }
-  
-  .review-card p {
-    font-size: 16px;
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .review-card .author {
-    display: flex;
-    align-items: center;
-  }
-  
-  .review-card .author img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  
-  .review-card .author .name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  @media (max-width: 768px) {
-    .reviews-page {
-      width: 90%;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .reviews-page {
-      width: 100%;
-    }
-  }
-  
+  background-color: #f0f2f5;
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
 }
@@ -153,8 +37,8 @@ footer {
   padding: 20px;
   width: 100%;
   box-sizing: border-box;
-  margin-top: 60px; /* Adjust according to the height of the header */
-  margin-bottom: 60px; /* Adjust according to the height of the footer */
+  margin-top: 60px; /* Ajuster selon la hauteur de l'en-tête */
+  margin-bottom: 60px; /* Ajuster selon la hauteur du pied de page */
 }
 
 .reviews-page {

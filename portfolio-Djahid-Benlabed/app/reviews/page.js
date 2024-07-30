@@ -30,10 +30,10 @@ function ReviewsPage() {
         <>
           <h1 className="text-t">Témoignages</h1>
           <nav>
-            <Link href="/reviews/reviews/Tem" className="reviews-link">
+            <Link href="/reviews/reviewss" className="reviews-link">
               Voir les témoignages
             </Link>
-            <Link href="/reviews/setreviews/Tem" className="reviews-link">
+            <Link href="/reviews/setreviews" className="reviews-link">
               Ajouter un témoignage
             </Link>
           </nav>
