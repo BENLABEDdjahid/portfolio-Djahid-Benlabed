@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@1,300&display=swap');
+
+.footer {
+  width: 100%;
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  bottom: 0;
+}
+@media (max-width: 768px) {
+  form {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  form {
+    width: 100%;
+  }
+}
+.footer a {
+  color: rgb(250, 251, 252);
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: 'REM', sans-serif;
+}
+
+.footer a:hover {
+  color: #ddd;
+}
