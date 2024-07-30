@@ -156,4 +156,12 @@ footer {
   .review-card {
     animation-duration: 0.7s;
   }
+
+  .reviews-header h1 {
+    font-size: 28px;
+  }
+
+  .reviews-header p {
+    font-size: 16px;
+  }
 }
