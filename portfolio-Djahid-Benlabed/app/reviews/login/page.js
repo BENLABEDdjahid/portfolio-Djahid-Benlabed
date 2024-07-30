@@ -1,7 +1,7 @@
 "use client";
 
 import { useDispatch } from 'react-redux';
-import { login } from '@/redux/feature/authSlice'; // Ajustez ce chemin selon votre structure réelle
+import { login } from '@/redux/feature/authSlice'; // Adjust this path according to your actual structure
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -16,11 +16,21 @@ export default function LoginPage() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (username === 'admin' && password === 'password') {
-      dispatch(login());
-      router.push('/reviews'); // Redirection vers la page des témoignages après la connexion
+    dispatch(login({ username, password }));
+    const state = store.getState();
+    if (state.auth.isAuthenticated) {
+      router.push('/reviews'); // Redirect to testimonials page after login
     } else {
       setError('Invalid username or password');
+    }
+  };
+
+  // Function to simulate login
+  const handleTestLogin = () => {
+    dispatch(login({ username: 'testuser', password: 'testpassword' }));
+    const state = store.getState();
+    if (state.auth.isAuthenticated) {
+      router.push('/reviews'); // Redirect to testimonials page after login
     }
   };
 
@@ -40,6 +50,9 @@ export default function LoginPage() {
         <button type="submit">Login</button>
       </form>
       <p>Don't have an account? <Link href="/reviews/inscription">Sign up</Link></p>
+      <button className="login-button" onClick={handleTestLogin}>
+        Se connecter (pour test)
+      </button>
     </div>
   );
 }

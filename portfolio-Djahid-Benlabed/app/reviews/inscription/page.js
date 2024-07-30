@@ -1,7 +1,7 @@
 "use client";
 
 import { useDispatch } from 'react-redux';
-import { login } from '@/redux/feature/authSlice'; // Adjust this path according to your actual structure
+import { signup } from '@/redux/feature/authSlice'; // Adjust this path according to your actual structure
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
@@ -23,8 +23,8 @@ export default function SignupPage() {
         setError('Passwords do not match');
         return;
       }
-      dispatch(login({ username, email, password })); // Adjust according to your login function
-      router.push('/reviews'); // Redirect to testimonials page after sign-up
+      dispatch(signup({ username, email, password }));
+      router.push('/reviews/login'); // Redirect to login page after sign-up
     } else {
       setError('All fields are required');
     }

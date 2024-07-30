@@ -40,11 +40,11 @@ function ReviewsPage() {
         </>
       )}
 
-      {}
       {!isLoggedIn && (
         <button className="login-button" onClick={handleLogin}>
           Se connecter (pour test)
-        </button>      )}
+        </button>
+      )}
     </div>
   );
 }
