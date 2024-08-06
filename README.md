@@ -6,11 +6,19 @@ Cette deuxième partie du projet a pour objectif de créer un portfolio personne
 Fonctionnalités 📋
 
 Page d'accueil 🏠 : Présentation personnelle avec photo et compétences.
+![PageD'acceuil](https://github.com/user-attachments/assets/5cabcc6f-762f-4f6b-b52e-ce6926f45786)
+
 Entête (Header) 📌 : Navigation vers les autres pages du portfolio.
 Pied de page (Footer) 🦶 : Liens vers GitHub et LinkedIn.
 Pages de projets 💼 : Détails de mes projets avec description et technologies utilisées.
+![PageProjet](https://github.com/user-attachments/assets/66f44c8b-b747-4f86-aa3b-fa158b2b4c61)
+
 Page de contact 📞 : Formulaire de contact valide.
+![PageContact](https://github.com/user-attachments/assets/e1b4c02d-8e02-4f58-a450-6ced63c17d44)
+
 Pages de témoignages ✍️ : Les visiteurs peuvent laisser et modifier des témoignages.
+![page Témoignages](https://github.com/user-attachments/assets/712dc596-ddc4-4550-9460-02a2f34ad405)
+
 
 
 Exigences ✅
@@ -40,3 +48,7 @@ Instructions 🛠️
 Installez les dépendances : npm install
 
 Lancez l'application : npm run dev
+
+
+
+
